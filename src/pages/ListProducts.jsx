@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Linha from "./Linha";
+import Linha from "../components/Linha";
 
 const ListProducts = () => {
   let [products, setProducts] = useState([]);
@@ -19,6 +19,9 @@ const ListProducts = () => {
               </th>
               <th scope="col" className="px-6 py-3">
                 Preço
+              </th>
+              <th scope="col" className="px-6 py-3">
+                Opções
               </th>
             </tr>
           </thead>
