@@ -1,7 +1,9 @@
 import React from 'react'
 import Linha from '../components/Linha';
+import { useFavoritoContext } from '../contexts/Favorito';
 
 function Favoritos() {
+    const {favorito} = useFavoritoContext();
   return (
     <>
     <div className="relative overflow-x-auto">
@@ -20,7 +22,11 @@ function Favoritos() {
           </tr>
         </thead>
         <tbody>
-          <Linha key={'1'} name={'teste'} price={'2000'} />
+        {favorito.map((item) => {
+              return (
+                <Linha key={item.id} {...item} />
+              );
+            })}
         </tbody>
       </table>
     </div>

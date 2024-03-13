@@ -28,7 +28,7 @@ const ListProducts = () => {
           <tbody>
             {products.map((item) => {
               return (
-                <Linha key={item.id} name={item.name} price={item.price} />
+                <Linha key={item.id} {...item} />
               );
             })}
           </tbody>
