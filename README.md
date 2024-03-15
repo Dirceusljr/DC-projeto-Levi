@@ -12,21 +12,21 @@ Projeto para ser clonado: https://github.com/Dirceusljr/DC-projeto-aula
 
  1. Criar uma pasta para o projeto;
  2. Criar um repositório novo;
- 3. Abrir o VS Code na pasta do projeto e usar o comando:
+ 3. Abrir o VS Code na pasta do projeto e usar o comando:<br/>
 	`git clone https://github.com/Dirceusljr/DC-projeto-aula .`
- 4. Usar os seguines comando após o projeto ser clonado:
-	`git init`
-	`git remote set-url origin URL-do-repositório-criado` 
-`git add .`
-`git commit -m 'mensagem'`
+ 4. Usar os seguines comando após o projeto ser clonado:<br/>
+	`git init`<br/>
+	`git remote set-url origin URL-do-repositório-criado` <br/>
+`git add .`<br/>
+`git commit -m 'mensagem'`<br/>
 `git push -u origin master`
 
 ## Refatoração do Código
 
 1. Organização dos arquivos em pastas:
- - Pastas
- -- Components
- -- Pages
+ - Pastas<br/>
+ -- Components<br/>
+ -- Pages<br/>
  -- Json
 
 2. Arquivo router.jsx dedicado a rotas;
