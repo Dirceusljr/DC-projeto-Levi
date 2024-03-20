@@ -20,7 +20,7 @@ Projeto para ser clonado: https://github.com/Dirceusljr/DC-projeto-aula
 	`git checkout -b main`<br/>
 `git add .`<br/>
 `git commit -m 'mensagem'`<br/>
-`git push -u origin master`
+`git push --set-upstream origin main`
 
 ## Refatoração do Código
 
