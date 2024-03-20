@@ -29,12 +29,18 @@ export function useFavoritoContext() {
         }
 
         novaLista = favorito.filter((fav) => fav.id !== novoFavorito.id)
+        
 
         return setFavorito(novaLista)
     }
 
+    function atualizarFavorito(novoFavorito) {
+        return setFavorito(novoFavorito)
+    }
+
     return {
         favorito,
-        adicionarFavorito
+        adicionarFavorito,
+        atualizarFavorito
     }
 }

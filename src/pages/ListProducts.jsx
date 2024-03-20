@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from "react";
-import Linha from "../components/Linha";
+import { useState } from "react";
+import { listarProdutos } from "../shared/function/crud";
 
 const ListProducts = () => {
-  let [products, setProducts] = useState([]);
-  useEffect(() => {
-    fetch("http://localhost:3000/products")
-      .then((response) => response.json())
-      .then((data) => setProducts(data));
-  });
+
+  let [produtos, setProdutos] = useState([])
+  fetch('http://localhost:3000/products')
+  .then((res) => res.json())
+  .then((data) => setProdutos(data))
+  
   return (
     <>
       <div className="relative overflow-x-auto">
@@ -26,11 +26,7 @@ const ListProducts = () => {
             </tr>
           </thead>
           <tbody>
-            {products.map((item) => {
-              return (
-                <Linha key={item.id} {...item} />
-              );
-            })}
+            {listarProdutos(produtos)}
           </tbody>
         </table>
       </div>
